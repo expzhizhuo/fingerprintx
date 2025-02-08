@@ -6,7 +6,6 @@ toolchain go1.22.1
 
 require (
 	github.com/ory/dockertest/v3 v3.9.1
-	github.com/praetorian-inc/fingerprintx v1.1.14
 	github.com/projectdiscovery/wappalyzergo v0.2.14
 	github.com/spf13/cobra v1.5.0
 	github.com/stretchr/testify v1.10.0

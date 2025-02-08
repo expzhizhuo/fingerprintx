@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/expzhizhuo/fingerprintx/pkg/plugins"
 	"github.com/ory/dockertest/v3"
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
 	"github.com/stretchr/testify/require"
 )
 

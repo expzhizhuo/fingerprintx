@@ -3,11 +3,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
-	"github.com/praetorian-inc/fingerprintx/pkg/scan"
 	"log"
 	"net/netip"
 	"time"
+
+	"github.com/expzhizhuo/fingerprintx/pkg/plugins"
+	"github.com/expzhizhuo/fingerprintx/pkg/scan"
 )
 
 func main() {
@@ -20,10 +21,10 @@ func main() {
 	}
 
 	// create a target list to scan
-	ip, _ := netip.ParseAddr("127.0.0.1")
+	ip, _ := netip.ParseAddr("193.112.194.72")
 	target := plugins.Target{
 		Address: netip.AddrPortFrom(ip, 27017),
-		Host:    "127.0.0.1",
+		Host:    "193.112.194.72",
 	}
 	targets := make([]plugins.Target, 1)
 	targets = append(targets, target)

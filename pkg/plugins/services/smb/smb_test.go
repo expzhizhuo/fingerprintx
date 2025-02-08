@@ -17,9 +17,9 @@ package smb
 import (
 	"testing"
 
+	"github.com/expzhizhuo/fingerprintx/pkg/plugins"
+	"github.com/expzhizhuo/fingerprintx/pkg/test"
 	"github.com/ory/dockertest/v3"
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
-	"github.com/praetorian-inc/fingerprintx/pkg/test"
 )
 
 func TestSMB(t *testing.T) {

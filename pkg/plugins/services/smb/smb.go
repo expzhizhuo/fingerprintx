@@ -24,8 +24,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
-	utils "github.com/praetorian-inc/fingerprintx/pkg/plugins/pluginutils"
+	"github.com/expzhizhuo/fingerprintx/pkg/plugins"
+	utils "github.com/expzhizhuo/fingerprintx/pkg/plugins/pluginutils"
 )
 
 type SMBPlugin struct{}

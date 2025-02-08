@@ -20,8 +20,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins/pluginutils"
+	"github.com/expzhizhuo/fingerprintx/pkg/plugins"
+	"github.com/expzhizhuo/fingerprintx/pkg/plugins/pluginutils"
 )
 
 type EchoPlugin struct{}
