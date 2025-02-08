@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/binary"
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
 	"net"
 	"time"
@@ -35,21 +34,13 @@ func (p *MongoDBPlugin) Run(conn net.Conn, timeout time.Duration, target plugins
 	// 解析buildInfo响应
 	buildInfoDoc, err := parseBSONResponse(buildInfoResponse)
 	if err == nil {
-		fmt.Printf("Parsed buildInfo response: %v\n", buildInfoDoc)
-		jsonBytes, err := json.Marshal(buildInfoDoc)
-		if err != nil {
-			fmt.Printf("Failed to marshal buildInfo response: %v\n", err)
-		}
-		jsonString := string(jsonBytes)
 		payload := plugins.ServiceMongoDB{
 			PacketType:   "buildInfo",
-			PacketData:   jsonString,
 			ErrorMessage: "",
 			ErrorCode:    0,
 		}
 		return plugins.CreateServiceFrom(target, payload, false, buildInfoDoc["version"].(string), plugins.TCP), nil
 	}
-
 	return nil, fmt.Errorf("response did not match expected MongoDB buildInfo response")
 }
 

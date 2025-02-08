@@ -394,7 +394,6 @@ func (e ServiceMSSQL) Type() string { return ProtoMSSQL }
 
 type ServiceMongoDB struct {
 	PacketType   string `json:"packetType"` // 服务器返回的数据包类型（例如：握手或错误）
-	PacketData   string `json:"PacketData"` // 响应数据
 	ErrorMessage string `json:"errorMsg"`   // 如果服务器返回错误数据包，则为错误消息
 	ErrorCode    int    `json:"errorCode"`  // 如果服务器返回错误数据包，则为错误代码
 }
