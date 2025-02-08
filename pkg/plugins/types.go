@@ -40,6 +40,7 @@ const (
 	ProtoDHCP       = "dhcp"
 	ProtoEcho       = "echo"
 	ProtoFTP        = "ftp"
+	ProtoMongoDB    = "mongodb"
 	ProtoHTTP       = "http"
 	ProtoHTTPS      = "https"
 	ProtoHTTP2      = "http2"
@@ -112,6 +113,10 @@ func (e Service) Metadata() Metadata {
 		return p
 	case ProtoRedis:
 		var p ServiceRedis
+		_ = json.Unmarshal(e.Raw, &p)
+		return p
+	case ProtoMongoDB:
+		var p ServiceMongoDB
 		_ = json.Unmarshal(e.Raw, &p)
 		return p
 	case ProtoHTTP:
@@ -387,6 +392,15 @@ type ServiceMSSQL struct {
 
 func (e ServiceMSSQL) Type() string { return ProtoMSSQL }
 
+type ServiceMongoDB struct {
+	PacketType   string `json:"packetType"` // 服务器返回的数据包类型（例如：握手或错误）
+	PacketData   string `json:"PacketData"` // 响应数据
+	ErrorMessage string `json:"errorMsg"`   // 如果服务器返回错误数据包，则为错误消息
+	ErrorCode    int    `json:"errorCode"`  // 如果服务器返回错误数据包，则为错误代码
+}
+
+func (e ServiceMongoDB) Type() string { return ProtoMongoDB }
+
 type ServiceVNC struct{}
 
 func (e ServiceVNC) Type() string { return ProtoVNC }
@@ -404,7 +418,7 @@ type ServiceRedis struct {
 func (e ServiceRedis) Type() string { return ProtoRedis }
 
 type ServiceFTP struct {
-	Banner         string `json:"banner"`
+	Banner string `json:"banner"`
 }
 
 func (e ServiceFTP) Type() string { return ProtoFTP }

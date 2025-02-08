@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
+	"fingerprintx/pkg/plugins"
 )
 
 type outputFormat string

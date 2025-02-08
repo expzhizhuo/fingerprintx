@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/ory/dockertest/v3"
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
+	"fingerprintx/pkg/plugins"
 	"github.com/stretchr/testify/require"
 )
 

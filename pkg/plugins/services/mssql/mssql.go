@@ -19,8 +19,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
-	utils "github.com/praetorian-inc/fingerprintx/pkg/plugins/pluginutils"
+	"fingerprintx/pkg/plugins"
+	utils "fingerprintx/pkg/plugins/pluginutils"
 )
 
 // Potential values for PLOptionToken
