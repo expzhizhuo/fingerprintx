@@ -19,7 +19,7 @@ import (
 	"net"
 	"time"
 
-	"fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
 )
 
 // http://72.47.221.139/sites/default/files/standards/documents/DSP0114.pdf

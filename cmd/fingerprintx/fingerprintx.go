@@ -15,7 +15,7 @@
 package main
 
 import (
-	"fingerprintx/pkg/runner"
+	"github.com/praetorian-inc/fingerprintx/pkg/runner"
 )
 
 func main() {

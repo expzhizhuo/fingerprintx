@@ -22,7 +22,7 @@ import (
 	"sort"
 	"time"
 
-	"fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
 )
 
 var dialer = &net.Dialer{

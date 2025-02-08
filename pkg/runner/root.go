@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"fingerprintx/pkg/scan"
+	"github.com/praetorian-inc/fingerprintx/pkg/scan"
 	"github.com/spf13/cobra"
 )
 

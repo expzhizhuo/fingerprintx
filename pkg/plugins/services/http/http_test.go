@@ -18,8 +18,8 @@ import (
 	"testing"
 
 	"github.com/ory/dockertest/v3"
-	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
-	"github.com/praetorian-inc/fingerprintx/pkg/test"
+	"github.com/praetorian-inc/github.com/praetorian-inc/fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/github.com/praetorian-inc/fingerprintx/pkg/test"
 	wappalyzer "github.com/projectdiscovery/wappalyzergo"
 )
 

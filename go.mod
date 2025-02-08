@@ -1,4 +1,4 @@
-module fingerprintx
+module github.com/expzhizhuo/fingerprintx
 
 go 1.21
 

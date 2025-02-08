@@ -24,8 +24,8 @@ import (
 	"strings"
 	"time"
 
-	"fingerprintx/pkg/plugins"
-	"fingerprintx/pkg/scan"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/fingerprintx/pkg/scan"
 )
 
 func checkConfig(config cliConfig) error {

@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
 )
 
 var inputFile string

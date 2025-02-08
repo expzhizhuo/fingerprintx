@@ -2,9 +2,9 @@ package main
 
 import (
 	"encoding/json"
-	"fingerprintx/pkg/plugins"
-	"fingerprintx/pkg/scan"
 	"fmt"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/fingerprintx/pkg/scan"
 	"log"
 	"net/netip"
 	"time"

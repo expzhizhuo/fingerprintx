@@ -19,8 +19,8 @@ import (
 	"net"
 	"time"
 
-	"fingerprintx/pkg/plugins"
-	utils "fingerprintx/pkg/plugins/pluginutils"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
+	utils "github.com/praetorian-inc/fingerprintx/pkg/plugins/pluginutils"
 )
 
 /*

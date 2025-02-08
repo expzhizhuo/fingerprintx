@@ -17,7 +17,7 @@ package scan
 import (
 	"log"
 
-	"fingerprintx/pkg/plugins"
+	"github.com/praetorian-inc/fingerprintx/pkg/plugins"
 )
 
 func UDPScan(targets []plugins.Target, config Config) ([]plugins.Service, error) {
