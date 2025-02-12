@@ -22,6 +22,7 @@ import (
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/dns"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/echo"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/ftp"
+	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/mongodb"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/http"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/imap"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/ipmi"
@@ -32,7 +33,6 @@ import (
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/ldap"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/linuxrpc"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/modbus"
-	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/mongodb"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/mqtt/mqtt3"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/mqtt/mqtt5"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/mssql"
@@ -54,4 +54,5 @@ import (
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/stun"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/telnet"
 	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/vnc"
+	_ "github.com/expzhizhuo/fingerprintx/pkg/plugins/services/dameng"
 )

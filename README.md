@@ -42,6 +42,31 @@ func (p *MongoDBPlugin) PortPriority(port uint16) bool {
 	return port == 27017
 }
 ```
+## 支持协议
+| SERVICE    | TRANSPORT | SERVICE    | TRANSPORT |
+|------------|-----------|------------|-----------|
+| HTTP       | TCP       | REDIS      | TCP       |
+| SSH        | TCP       | MQTT3      | TCP       |
+| MODBUS     | TCP       | VNC        | TCP       |
+| TELNET     | TCP       | MQTT5      | TCP       |
+| FTP        | TCP       | RSYNC      | TCP       |
+| SMB        | TCP       | RPC        | TCP       |
+| DNS        | TCP       | OracleDB   | TCP       |
+| SMTP       | TCP       | RTSP       | TCP       |
+| PostgreSQL | TCP       | MQTT5      | TCP (TLS) |
+| RDP        | TCP       | HTTPS      | TCP (TLS) |
+| POP3       | TCP       | SMTPS      | TCP (TLS) |
+| KAFKA      | TCP       | MQTT3      | TCP (TLS) |
+| MYSQL      | TCP       | RDP        | TCP (TLS) |
+| MSSQL      | TCP       | POP3S      | TCP (TLS) |
+| LDAP       | TCP       | LDAPS      | TCP (TLS) |
+| IMAP       | TCP       | IMAPS      | TCP (TLS) |
+| SNMP       | UDP       | Kafka      | TCP (TLS) |
+| OPENVPN    | UDP       | NETBIOS-NS | UDP       |
+| IPSEC      | UDP       | DHCP       | UDP       |
+| STUN       | UDP       | NTP        | UDP       |
+| DNS        | UDP       | MongoDB    | TCP       |
+| 达梦数据库      | TCP       |
 
 ## 最后
 

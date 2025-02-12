@@ -21,10 +21,10 @@ func main() {
 	}
 
 	// create a target list to scan
-	ip, _ := netip.ParseAddr("193.112.194.72")
+	ip, _ := netip.ParseAddr("220.172.40.182")
 	target := plugins.Target{
-		Address: netip.AddrPortFrom(ip, 27017),
-		Host:    "193.112.194.72",
+		Address: netip.AddrPortFrom(ip, 5236),
+		Host:    "220.172.40.182",
 	}
 	targets := make([]plugins.Target, 1)
 	targets = append(targets, target)

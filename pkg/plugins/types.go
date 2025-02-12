@@ -41,6 +41,7 @@ const (
 	ProtoEcho       = "echo"
 	ProtoFTP        = "ftp"
 	ProtoMongoDB    = "mongodb"
+	ProtoDameng    = "dameng"
 	ProtoHTTP       = "http"
 	ProtoHTTPS      = "https"
 	ProtoHTTP2      = "http2"
@@ -117,6 +118,10 @@ func (e Service) Metadata() Metadata {
 		return p
 	case ProtoMongoDB:
 		var p ServiceMongoDB
+		_ = json.Unmarshal(e.Raw, &p)
+		return p
+	case ProtoDameng:
+		var p ServiceDameng
 		_ = json.Unmarshal(e.Raw, &p)
 		return p
 	case ProtoHTTP:
@@ -397,8 +402,10 @@ type ServiceMongoDB struct {
 	ErrorMessage string `json:"errorMsg"`   // 如果服务器返回错误数据包，则为错误消息
 	ErrorCode    int    `json:"errorCode"`  // 如果服务器返回错误数据包，则为错误代码
 }
-
+type ServiceDameng struct {}
 func (e ServiceMongoDB) Type() string { return ProtoMongoDB }
+
+func (e ServiceDameng) Type() string { return ProtoDameng }
 
 type ServiceVNC struct{}
 
